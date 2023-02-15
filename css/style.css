@@ -21,7 +21,6 @@ a {
 
 .container {
   max-width: 36rem;
-  height: 600px;
   margin: 0 auto;
 }
 
@@ -88,12 +87,13 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 2rem;
-  max-height: 15.875rem;
   margin-bottom: 3rem;
 }
 .docs-reports__left-box {
-  max-width: 20rem;
+  width: 20rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid #000;
@@ -195,6 +195,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .docs-reports__info-text {
   width: 16rem;
@@ -233,4 +235,16 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 767.98px) {
+  .container {
+    max-width: 85%;
+  }
+  .docs-reports__left-box, .docs-reports__right-box, .docs-reports__info-text, .docs-reports__info-btn {
+    width: 100%;
+  }
+  .docs-reports__info-text {
+    margin-bottom: 1rem;
+  }
 }
