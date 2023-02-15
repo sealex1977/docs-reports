@@ -11,6 +11,10 @@ body{
 h1, h2, h3, p{
     margin: 0;
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
 .wrapper{
     max-width: 1440px;
     margin: 0 auto;
@@ -20,63 +24,170 @@ h1, h2, h3, p{
     max-width: 36rem;
     height: 600px;
     margin: 0 auto;
-    background-color: aqua;
 }
 .docs-reports {
     text-align: center;
     margin: 5rem auto 7.3rem;
 
     &__title {
+        color: $primary-color;
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 118%;
+        margin-bottom: 1.75rem;
     }
 
     &__text {
+        color: $text-color;
+        max-width: 30.8rem;
+        font-weight: 700;
+        line-height: 125%;
+        margin: 0 auto 3rem;
     }
 
     &__details {
-    }
-
-    &__details-link {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 2rem;
     }
 
     &__details-top {
+        width: 100%;
+        height: 4.3125rem;
+        box-sizing: border-box;
+        border: 1px solid $primary-color;
+        border-radius: 1.25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__details-top-text {
+        color: $primary-color;
+        font-size: 1.125rem;
+        line-height: 117%;
     }
 
     &__details-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        max-height: 15.875rem;
+        margin-bottom: 3rem;
     }
 
     &__left-box {
+        max-width: 20rem;
+        box-sizing: border-box;
+        border: 1px solid $primary-color;
+        border-radius: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: left;
+        gap: 1rem;
+        padding: 3.25rem 1.5rem;
     }
 
     &__left-box-title {
+        color: $primary-color;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 117%;
     }
 
     &__left-box-description {
+        color: $text-color;
+        font-weight: 700;
+        line-height: 125%;
     }
 
     &__left-box-date {
+        color: $text-color;
+        font-weight: 700;
+        font-size: .75rem;
+        line-height: 117%;
     }
 
     &__right-box {
+        width: 14rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 2rem;
     }
 
     &__top-right-box {
+        height: 6.9375rem;
+        box-sizing: border-box;
+        border: 1px solid $primary-color;
+        border-radius: 1.25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &__top-right-box-text {
+        color: $primary-color;
+        font-size: 1.125rem;
+        line-height: 117%;
     }
 
     &__bottom-right-box {
+        height: 6.9375rem;
+        box-sizing: border-box;
+        border: 1px solid $primary-color;
+        border-radius: 1.25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &__bottom-right-box-text {
+        color: $primary-color;
+        font-size: 1.125rem;
+        line-height: 117%;
     }
 
     &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     &__info-text {
+        width: 16rem;
+        text-align: left;
+        color: $primary-color;
+        font-size: 1.125rem;
+        line-height: 117%;
     }
 
     &__info-btn {
+        width: 17rem;
+        height: 2.75rem;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 16px;
+        gap: 8px;
+        color: $text-color;
+        border: 1px solid $text-color;
+        border-radius: 2.75rem;
+        font-weight: 700;
+        line-height: 1.25rem;
+        cursor: pointer;
+    }
+
+    &__info-btn-arrow {
+        width: 1.25rem;
+        height: 1.25rem;
+        background-image: url(../img/arrow-forward-circle.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 }
