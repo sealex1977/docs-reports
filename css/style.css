@@ -1,3 +1,27 @@
-h2, h3, p {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+}
+
+h1, h2, h3, p {
   margin: 0;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 36rem;
+  height: 600px;
+  margin: 0 auto;
+  background-color: aqua;
+}
+
+.docs-reports {
+  text-align: center;
+  margin: 5rem auto 7.3rem;
 }
